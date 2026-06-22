@@ -1,0 +1,167 @@
+/* columns-culture -- "Shape the Future" culture block
+ * Source: paramount.com homepage culture section
+ * Dark vista-navy background, two-column: stacked display headings + CTA / full-height person image.
+ * Values extracted from source computed styles (1440px viewport):
+ *   section bg rgb(0,10,60); h2 144px white; h1 304px brand-blue; CTA 40px white uppercase; img 720x738.
+ */
+
+/* Full-bleed: override the section's max-width wrapper so the block spans edge-to-edge.
+ * The culture block is a full-width banner, so the section margins, the wrapper
+ * max-width, and its horizontal padding/margins are all removed. */
+.section.columns-culture-container {
+  margin: 0;
+  padding: 0;
+}
+
+main > .section.columns-culture-container > .columns-culture-wrapper {
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Block is self-sufficient with the navy background (reinforced by .section.vista-navy) */
+.columns-culture.block {
+  background-color: var(--vista-navy);
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Row: mobile-first single column (text, then image) */
+.columns-culture > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-culture > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  order: 1;
+}
+
+/* Text column padding (mobile) */
+.columns-culture > div > div:first-child {
+  padding: 32px 24px 40px;
+}
+
+/* Headings -- live text, Vista Sans, uppercase, tight leading.
+ * Sizes scale with viewport to fill the column like the source (304px / 144px at 1440px). */
+.columns-culture h2 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  line-height: 0.9;
+  text-transform: uppercase;
+  font-size: clamp(48px, 10vw, 144px);
+}
+
+.columns-culture h1 {
+  margin: 0;
+  color: var(--brand-blue);
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  line-height: 0.9;
+  text-transform: uppercase;
+  font-size: clamp(96px, 21vw, 304px);
+}
+
+/* "Join Us" CTA -- plain link styled as display text with trailing arrow.
+ * Reset EDS auto-button decoration. */
+.columns-culture p {
+  margin: 24px 0 0;
+}
+
+.columns-culture a:any-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #fff;
+  font-family: var(--heading-font-family);
+  font-weight: 400;
+  font-size: clamp(24px, 2.8vw, 40px);
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.columns-culture a:any-link::after {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: currentcolor;
+  transition: transform 0.2s ease;
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><path d="M20 12L18.59 13.41L24.17 19H12V21H24.17L18.59 26.59L20 28L28 20L20 12Z"/></svg>') no-repeat center / contain;
+}
+
+.columns-culture a:any-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.columns-culture a:any-link:hover::after {
+  transform: translateX(4px);
+}
+
+/* Image column -- full width on mobile */
+.columns-culture > div > .columns-culture-img-col {
+  order: 0;
+  padding: 0;
+}
+
+.columns-culture .columns-culture-img-col picture {
+  display: block;
+  line-height: 0;
+}
+
+.columns-culture img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom right;
+}
+
+/* Desktop: 50/50 two-column, text left and image right, full-height image */
+@media (width >= 900px) {
+  .columns-culture > div {
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 738px;
+  }
+
+  .columns-culture > div > div {
+    flex: 0 0 50%;
+    max-width: 50%;
+    order: unset;
+  }
+
+  /* Left text column: vertically centred group with generous left inset (~64px source) */
+  .columns-culture > div > div:first-child {
+    padding: 40px 40px 40px 64px;
+  }
+
+  .columns-culture > div > .columns-culture-img-col {
+    order: unset;
+  }
+
+  .columns-culture .columns-culture-img-col picture,
+  .columns-culture .columns-culture-img-col img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .columns-culture img {
+    height: 100%;
+    min-height: 738px;
+    object-fit: cover;
+    object-position: bottom center;
+  }
+}
