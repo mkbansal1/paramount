@@ -1,0 +1,94 @@
+/* cards-show: related-content show poster grid.
+ * Source: paramount.com brand-tile-slider. Responsive grid (mobile slider on
+ * source rendered as a responsive grid per migration decision).
+ * Columns: 1 (mobile) / 3 (tablet) / 4 (desktop). 32px gaps.
+ * Each card: portrait poster (304x456 => 2/3) + show title beneath, navy text. */
+
+.cards-show > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.cards-show > ul > li {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+}
+
+.cards-show .cards-show-card-image {
+  line-height: 0;
+}
+
+.cards-show .cards-show-card-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 304 / 456;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+/* Title row: show title on the left, a right-arrow that reveals on hover at the
+ * far right (matches the source brand-tile-details: justify-content space-between
+ * with span.brand-tile-arr animating in). */
+.cards-show .cards-show-card-body {
+  margin: 16px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 16px;
+}
+
+.cards-show .cards-show-card-body p {
+  margin: 0;
+}
+
+.cards-show .cards-show-card-body a {
+  display: block;
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: none;
+  text-align: left;
+  text-decoration: none;
+  color: var(--vista-navy);
+}
+
+.cards-show .cards-show-card-body a:hover {
+  text-decoration: none;
+  color: var(--vista-navy);
+}
+
+/* Hover-reveal right-arrow icon (hidden by default, slides in on hover). */
+.cards-show .cards-show-card-arrow {
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: var(--vista-navy);
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11h13.17l-5.59-5.59L13 4l8 8-8 8-1.41-1.41L17.17 13H4z"/></svg>') no-repeat center / contain;
+}
+
+.cards-show > ul > li:hover .cards-show-card-arrow,
+.cards-show > ul > li:focus-within .cards-show-card-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (width >= 600px) {
+  .cards-show > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .cards-show > ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
