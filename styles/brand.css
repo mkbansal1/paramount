@@ -1,0 +1,26 @@
+:root {
+  /* Paramount brand fonts */
+  --heading-font-family: 'Paramount Vista Sans', 'Arial Narrow', sans-serif;
+  --body-font-family: 'Peak Sans', helvetica, arial, sans-serif;
+
+  /* Paramount brand colors */
+  --background-color: #fff;
+  --text-color: #000a3c;
+  --link-color: #0064ff;
+  --link-hover-color: #0a58ca;
+  --brand-blue: #0064ff;
+  --vista-navy: #000a3c;
+  --light-color: #f5f7fa;
+  --dark-color: #000a3c;
+
+  /* spacing */
+  --nav-height: 80px;
+
+  /* heading sizes (desktop) */
+  --heading-size-xxl: 160px;
+  --heading-size-xl: 112px;
+  --heading-size-l: 80px;
+  --heading-size-m: 40px;
+  --heading-size-s: 28px;
+  --heading-size-xs: 22px;
+}

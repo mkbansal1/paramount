@@ -1,0 +1,127 @@
+/* Block: cards-brand -- featured brands grid with hover-reveal overlay.
+   Values extracted from source computed styles (paramount.com homepage). */
+
+.cards-brand > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* col-6 mobile */
+  gap: 16px;
+}
+
+.cards-brand > ul > li {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--vista-navy);
+  aspect-ratio: 304 / 456;
+}
+
+/* --- Poster image --- */
+.cards-brand .cards-brand-card-image {
+  position: absolute;
+  inset: 0;
+  line-height: 0;
+}
+
+.cards-brand .cards-brand-card-image picture,
+.cards-brand .cards-brand-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.cards-brand .cards-brand-card-image img {
+  object-fit: cover;
+}
+
+/* --- Hover-reveal overlay --- */
+.cards-brand .cards-brand-card-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #03d1e5;
+  color: var(--vista-navy);
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.cards-brand > ul > li:hover .cards-brand-card-overlay,
+.cards-brand > ul > li:focus-within .cards-brand-card-overlay {
+  transform: translateY(0);
+}
+
+.cards-brand .cards-brand-card-overlay-content {
+  padding: 24px 24px 64px;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.cards-brand .cards-brand-card-title {
+  margin: 0 0 0.5em;
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: var(--heading-font-size-s);
+  line-height: 0.95;
+  text-transform: uppercase;
+  color: var(--vista-navy);
+}
+
+.cards-brand .cards-brand-card-desc {
+  margin: 0;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--vista-navy);
+}
+
+/* --- CTA arrow (anchored bottom-left, covers full tile for click) --- */
+.cards-brand .cards-brand-card-cta {
+  position: absolute;
+  inset: 0;
+  display: block;
+  text-decoration: none;
+}
+
+.cards-brand .cards-brand-card-cta-arrow {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  width: 28px;
+  height: 28px;
+  background-color: var(--vista-navy);
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11h13.17l-5.59-5.59L13 4l8 8-8 8-1.41-1.41L17.17 13H4z"/></svg>') no-repeat center / contain;
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11h13.17l-5.59-5.59L13 4l8 8-8 8-1.41-1.41L17.17 13H4z"/></svg>') no-repeat center / contain;
+}
+
+@media (width >= 600px) {
+  .cards-brand > ul {
+    grid-template-columns: repeat(3, 1fr); /* col-md-4 tablet */
+    gap: 24px;
+  }
+}
+
+@media (width >= 900px) {
+  .cards-brand > ul {
+    grid-template-columns: repeat(4, 1fr); /* col-xl-3 desktop */
+    gap: 32px;
+  }
+
+  .cards-brand .cards-brand-card-overlay-content {
+    padding: 32px 32px 80px;
+  }
+
+  .cards-brand .cards-brand-card-title {
+    font-size: var(--heading-font-size-m);
+  }
+
+  .cards-brand .cards-brand-card-desc {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .cards-brand .cards-brand-card-cta-arrow {
+    left: 32px;
+    bottom: 32px;
+  }
+}

@@ -1,0 +1,209 @@
+/* Paramount Hero Carousel
+ * Values extracted from source computed styles (paramount.com hero slider).
+ * Three stacked z-layers: background "WE ARE" text, middle slide imagery,
+ * foreground "Paramount" wordmark lockup. */
+
+/* Full-bleed: escape the section's max-width / padding constraints.
+ * Also zero the section margins so the hero sits flush against the brands section below. */
+.section.carousel-hero-container {
+  margin: 0;
+  padding: 0;
+}
+
+.section:has(.carousel-hero) > div {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-hero-wrapper {
+  max-width: none;
+  width: 100%;
+}
+
+.carousel-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 420px;
+  padding: 56px 0 0;
+  background-color: var(--vista-navy);
+  color: #fff;
+  overflow: hidden;
+}
+
+/* ---- BACKGROUND layer: "WE ARE" display text ---- */
+.carousel-hero .carousel-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.carousel-hero .carousel-hero-bg span {
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: 52vw;
+  line-height: 0.8;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: var(--brand-blue);
+  white-space: nowrap;
+}
+
+/* ---- MIDDLE layer: image-only cross-fade slides ---- */
+.carousel-hero .carousel-hero-slides {
+  position: relative;
+  z-index: 2;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 89%;
+  aspect-ratio: 1280 / 956;
+}
+
+.carousel-hero .carousel-hero-slide {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  pointer-events: none;
+}
+
+.carousel-hero .carousel-hero-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.carousel-hero .carousel-hero-slide picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-hero .carousel-hero-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ---- FOREGROUND layer: Paramount wordmark lockup ---- */
+.carousel-hero .carousel-hero-wordmark {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1em;
+  pointer-events: none;
+  text-align: center;
+}
+
+.carousel-hero .carousel-hero-wordmark-name {
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-style: italic;
+  font-size: 16vw;
+  line-height: 0.9;
+  color: #fff;
+}
+
+.carousel-hero .carousel-hero-wordmark-tagline {
+  font-family: var(--body-font-family);
+  font-weight: 400;
+  font-size: 3.2vw;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: #fff;
+  border-bottom: 1px solid rgb(255 255 255 / 60%);
+  padding-bottom: 0.4em;
+  padding-left: 0.35em;
+}
+
+/* ---- Play / pause controls ---- */
+.carousel-hero .carousel-hero-controls {
+  position: absolute;
+  z-index: 4;
+  left: 16px;
+  bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.carousel-hero .carousel-hero-controls button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  padding: 3px;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.carousel-hero .carousel-hero-controls .carousel-hero-play {
+  border: 1px solid var(--brand-blue);
+}
+
+.carousel-hero .carousel-hero-controls .carousel-hero-pause {
+  border: 1px solid #fff;
+}
+
+.carousel-hero .carousel-hero-controls button svg {
+  width: 18px;
+  height: 18px;
+  fill: #fff;
+}
+
+.carousel-hero .carousel-hero-controls button:hover,
+.carousel-hero .carousel-hero-controls button:focus-visible {
+  background-color: rgb(255 255 255 / 15%);
+}
+
+@media (width >= 900px) {
+  .carousel-hero {
+    min-height: 600px;
+    padding: 80px 0 0;
+  }
+
+  .carousel-hero .carousel-hero-bg span {
+    font-size: 66vw;
+  }
+
+  .carousel-hero .carousel-hero-wordmark-name {
+    font-size: 14vw;
+  }
+
+  .carousel-hero .carousel-hero-wordmark-tagline {
+    font-size: 1.9vw;
+  }
+
+  .carousel-hero .carousel-hero-controls {
+    left: 60px;
+    bottom: 20px;
+    gap: 20px;
+  }
+
+  .carousel-hero .carousel-hero-controls button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .carousel-hero .carousel-hero-controls button svg {
+    width: 22px;
+    height: 22px;
+  }
+}
