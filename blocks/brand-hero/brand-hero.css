@@ -1,0 +1,134 @@
+/* Brand hero — brand-detail header section.
+ * The whole hero section sits on dark vista-navy. Layout top-to-bottom:
+ *   1. breadcrumb (light text, on navy)
+ *   2. brand title H1 (large, white, uppercase Vista Sans)
+ *   3. media banner: either an autoplaying background video (video block) OR a
+ *      full-width photo banner image (image-hero variant).
+ * Extracted source values: bg rgb(0,10,60); title 160px/144px weight700 uppercase. */
+
+/* Full-bleed: escape the section's max-width / padding constraints, dark section.
+ * Lay the section out as a flex column so we can order the children:
+ *   breadcrumb (top) -> brand title -> media banner (video or image, bottom).
+ * The DOM order from the parser is breadcrumb, video, brand-hero; CSS `order`
+ * pulls the title above the video to match the source layout. */
+.section.brand-hero-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  background-color: var(--vista-navy);
+  overflow: hidden;
+}
+
+.section:has(.brand-hero) > div {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Order the hero children: breadcrumb (0), title (1), media banner (2). */
+.section.brand-hero-container .breadcrumb-wrapper { order: 0; }
+.section.brand-hero-container .brand-hero-wrapper { order: 1; }
+.section.brand-hero-container .video-wrapper,
+.section.brand-hero-container .default-content-wrapper { order: 2; }
+
+/* Breadcrumb: above the title, light text on the navy section. */
+.section.brand-hero-container .breadcrumb-wrapper {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+}
+
+.section.brand-hero-container .breadcrumb {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.section.brand-hero-container .breadcrumb .breadcrumb-item,
+.section.brand-hero-container .breadcrumb .breadcrumb-link {
+  color: #fff;
+}
+
+/* Media banner (video variant): renders as a full-width banner BELOW the title,
+ * in normal flow (not an absolute background), matching the source. */
+.section.brand-hero-container .video-wrapper,
+.section.brand-hero-container .video {
+  position: relative;
+  margin: 0;
+  max-width: none;
+  width: 100%;
+}
+
+.section.brand-hero-container .video {
+  aspect-ratio: 16 / 9;
+}
+
+.section.brand-hero-container .video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brand-hero-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: none;
+  width: 100%;
+}
+
+.brand-hero {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  color: #fff;
+}
+
+/* Rows / cells carry no layout of their own. */
+.brand-hero > div,
+.brand-hero > div > div {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.brand-hero h1,
+.brand-hero h2,
+.brand-hero h3 {
+  margin: 0;
+  padding: 0 24px 24px;
+  color: #fff;
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: var(--heading-font-size-xxl);
+  line-height: 0.9;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+/* Image-hero variant: the banner image renders full-width below the title. */
+.brand-hero picture {
+  display: block;
+  width: 100%;
+  line-height: 0;
+}
+
+.brand-hero picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+@media (width >= 900px) {
+  .brand-hero h1 {
+    padding: 0 64px 40px;
+    font-size: 112px;
+    line-height: 1;
+  }
+}

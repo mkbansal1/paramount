@@ -11,6 +11,16 @@ import { createOptimizedPicture } from '../../scripts/aem.js';
 export default function decorate(block) {
   const ul = document.createElement('ul');
 
+  // Detect the related-brands variant: square tiles whose cards have NO description
+  // paragraph (just a brand name + link). Homepage brand cards have descriptions.
+  const hasDescriptions = [...block.children].some((row) => {
+    const cells = [...row.children];
+    const imageCell = cells.find((c) => c.querySelector('picture, img'));
+    const bodyCell = cells.find((c) => c !== imageCell);
+    return bodyCell && [...bodyCell.querySelectorAll('p')].some((p) => !p.querySelector('a'));
+  });
+  if (!hasDescriptions) block.classList.add('cards-brand-square');
+
   [...block.children].forEach((row) => {
     const cells = [...row.children];
     const imageCell = cells.find((c) => c.querySelector('picture, img'));
