@@ -17,6 +17,45 @@
   aspect-ratio: 304 / 456;
 }
 
+/* Related-brands variant: square tiles, brand-name-only overlay.
+ * Unlike the homepage cards (cyan panel sliding up), the brand-detail related
+ * brands darken the image on hover and reveal the brand name centered, matching
+ * the source's logo-over-gradient treatment. */
+.cards-brand.cards-brand-square > ul > li {
+  aspect-ratio: 1 / 1;
+}
+
+.cards-brand.cards-brand-square .cards-brand-card-overlay {
+  transform: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgb(0 10 60 / 0%) 0%, rgb(0 10 60 / 70%) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cards-brand.cards-brand-square > ul > li:hover .cards-brand-card-overlay,
+.cards-brand.cards-brand-square > ul > li:focus-within .cards-brand-card-overlay {
+  transform: none;
+  opacity: 1;
+}
+
+.cards-brand.cards-brand-square .cards-brand-card-overlay-content {
+  padding: 16px;
+  text-align: center;
+}
+
+.cards-brand.cards-brand-square .cards-brand-card-title {
+  margin: 0;
+  color: #fff;
+}
+
+/* The CTA arrow is not used in the square (related-brands) variant. */
+.cards-brand.cards-brand-square .cards-brand-card-cta-arrow {
+  display: none;
+}
+
 /* --- Poster image --- */
 .cards-brand .cards-brand-card-image {
   position: absolute;
@@ -92,6 +131,44 @@
   background-color: var(--vista-navy);
   -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11h13.17l-5.59-5.59L13 4l8 8-8 8-1.41-1.41L17.17 13H4z"/></svg>') no-repeat center / contain;
   mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11h13.17l-5.59-5.59L13 4l8 8-8 8-1.41-1.41L17.17 13H4z"/></svg>') no-repeat center / contain;
+}
+
+/* "View All" call-to-action below the related-brands grid (default content link).
+ * Styled like the brand display CTA: large uppercase Vista Sans with a right arrow. */
+.section:has(.cards-brand) .default-content-wrapper p:last-child {
+  margin: 0;
+  text-align: center;
+  padding-top: 32px;
+}
+
+.section:has(.cards-brand) .default-content-wrapper p:last-child a:any-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  color: var(--vista-navy);
+  font-family: var(--heading-font-family);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.section:has(.cards-brand) .default-content-wrapper p:last-child a:any-link::after {
+  content: '';
+  width: 32px;
+  height: 32px;
+  background-color: var(--vista-navy);
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11h13.17l-5.59-5.59L13 4l8 8-8 8-1.41-1.41L17.17 13H4z"/></svg>') no-repeat center / contain;
+  transition: transform 0.2s ease;
+}
+
+.section:has(.cards-brand) .default-content-wrapper p:last-child a:hover::after {
+  transform: translateX(4px);
 }
 
 @media (width >= 600px) {
