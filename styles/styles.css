@@ -419,6 +419,11 @@ main .section.vista-navy .default-content-wrapper h3 {
 
 /* ===========================================================================
  * Press-release template (body.press-release)
+ * Reuses the shared hero-page block + default-content body, but the live press
+ * layout is lighter than the content-page hero: smaller Peak Sans title, muted
+ * grey eyebrow, narrow 640px editorial reading column. Scoped to body.press-release
+ * so the shared hero-page (content-page) is untouched. Matched to live.
+ * ======================================================================== */
  * Press releases reuse the shared hero-page block + default-content body, but
  * the live press layout is lighter than the content-page hero: a smaller
  * Peak Sans title, a muted-grey eyebrow, and a narrow 640px editorial reading
@@ -504,6 +509,10 @@ body.press-release main .default-content-wrapper > .press-byline-row > p {
 /* ===========================================================================
  * Legal-terms template (body.legal-terms)
  * Long-form legal/policy docs reuse the shared hero-page block + default-content
+ * body. Live layout: 160px uppercase Vista Sans title on the navy band + a narrow
+ * 640px centered reading column. Scoped to body.legal-terms so the shared
+ * hero-page (content-page) is untouched. Matched to live www.paramount.com.
+ * ======================================================================== */
  * body, but the live legal layout is a 160px uppercase Vista Sans title on the
  * navy band and a narrow 640px centered reading column for the body. Scope all
  * overrides to body.legal-terms so the content-page hero (which shares hero-page)
