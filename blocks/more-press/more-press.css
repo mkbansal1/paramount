@@ -1,0 +1,78 @@
+/* More Press — navy recirculation list at the foot of a press release.
+   Values matched to live www.paramount.com (navy #000a3c, 80px band padding,
+   Vista Sans 40px uppercase title, grey uppercase date + white Peak Sans titles). */
+.more-press.block {
+  background-color: var(--vista-navy);
+  color: #fff;
+  padding: 80px 32px;
+}
+
+.more-press .more-press-title {
+  display: inline-block;
+  margin: 0 0 40px;
+  font-family: var(--heading-font-family);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+
+.more-press .more-press-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 40px;
+}
+
+.more-press .more-press-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.more-press .more-press-date {
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #8386a0;
+}
+
+.more-press .more-press-link {
+  text-decoration: none;
+}
+
+.more-press .more-press-link h6 {
+  margin: 0;
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: none;
+  color: #fff;
+}
+
+.more-press .more-press-link:hover h6 {
+  text-decoration: underline;
+}
+
+@media (width >= 900px) {
+  .more-press.block {
+    padding: 80px 0;
+  }
+
+  .more-press .more-press-title,
+  .more-press .more-press-list {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .more-press .more-press-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 48px 64px;
+  }
+}

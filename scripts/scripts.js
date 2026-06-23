@@ -10,6 +10,9 @@ import {
   loadSections,
   loadCSS,
   buildBlock,
+  getMetadata,
+  decorateBlock,
+  loadBlock,
 } from './aem.js';
 
 /**
@@ -49,11 +52,31 @@ function buildWidgetAutoBlocks(main) {
 }
 
 /**
+ * Press-release "More Press" auto-block. On press pages (body carries the
+ * `press-release` template class via metadata) a "More Press" recirculation list
+ * is appended as its own section at the end of main. It is a template feature
+ * (an auto-updating query of the latest releases), not authored content, so it
+ * is synthesized here as a normal block and decorated by the standard pipeline.
+ * The Share control + byline divider are handled post-decoration (see
+ * decoratePressByline) because they restructure already-wrapped default content.
+ * @param {Element} main The container element
+ */
+function buildPressAutoBlocks(main) {
+  const template = (getMetadata('template') || '').toLowerCase();
+  if (!template.includes('press-release')) return;
+  if (main.querySelector('.more-press')) return;
+  const section = document.createElement('div');
+  section.append(buildBlock('more-press', { elems: [] }));
+  main.append(section);
+}
+
+/**
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
  */
 function buildAutoBlocks(main) {
   try {
+    buildPressAutoBlocks(main);
     // auto load `*/fragments/*` references
     const fragments = [...main.querySelectorAll('a[href*="/fragments/"]')].filter((f) => !f.closest('.fragment'));
     if (fragments.length > 0) {
@@ -118,6 +141,33 @@ function decorateButtons(main) {
 }
 
 /**
+ * Press-release byline: move the byline paragraph ("By Paramount Staff") and a
+ * Share control into a single flex row with a divider beneath it. Runs AFTER
+ * decorateSections/decorateBlocks because it restructures the already-formed
+ * default-content-wrapper; the share block is built, decorated and loaded inline.
+ * @param {Element} main The main element
+ */
+function decoratePressByline(main) {
+  const template = (getMetadata('template') || '').toLowerCase();
+  if (!template.includes('press-release')) return;
+  const wrapper = main.querySelector('.section:not(.hero-page-container) .default-content-wrapper');
+  const byline = wrapper ? wrapper.querySelector(':scope > p') : null;
+  if (!byline || byline.closest('.press-byline-row')) return;
+
+  const row = document.createElement('div');
+  row.className = 'press-byline-row';
+  byline.before(row);
+  row.append(byline);
+
+  const share = buildBlock('share', { elems: [] });
+  const holder = document.createElement('div');
+  holder.append(share);
+  row.append(holder);
+  decorateBlock(share);
+  loadBlock(share);
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -128,6 +178,7 @@ export function decorateMain(main) {
   decorateSections(main);
   decorateBlocks(main);
   decorateButtons(main);
+  decoratePressByline(main);
 }
 
 /**
