@@ -1,0 +1,33 @@
+.definition-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px 48px;
+}
+
+.definition-list ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.definition-list .definition-list-term {
+  font-weight: 700;
+}
+
+.definition-list .definition-list-term * {
+  margin: 0;
+  font-weight: 700;
+}
+
+.definition-list .definition-list-def * {
+  margin: 0;
+}
+
+@media (width >= 900px) {
+  .definition-list ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}

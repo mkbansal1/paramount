@@ -25,3 +25,76 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+/* No-images variant (e.g. CALM Act certifications, digital-ads, compliance
+   resources): light-grey padded "link cards" — a large navy uppercase title
+   (which is itself the link), laid out in a multi-column row. Matches the live
+   Paramount card style. */
+.cards.no-images > ul {
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.cards.no-images > ul > li {
+  border: 0;
+  background-color: #f3f4f6;
+  padding: 40px;
+}
+
+.cards.no-images .cards-card-body {
+  margin: 0;
+}
+
+.cards.no-images .cards-card-body h3 {
+  margin: 0;
+  font-family: var(--heading-font-family);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: var(--vista-navy, #000a3c);
+}
+
+.cards.no-images .cards-card-body h3:last-child {
+  margin-bottom: 0;
+}
+
+.cards.no-images .cards-card-body h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cards.no-images .cards-card-body h3 a:hover {
+  text-decoration: underline;
+}
+
+.cards.no-images .cards-card-body p {
+  margin: 32px 0 0;
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--vista-navy, #000a3c);
+}
+
+.cards.no-images .cards-card-body p a {
+  color: #0064ff;
+  text-decoration: none;
+}
+
+@media (width >= 600px) {
+  .cards.no-images > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .cards.no-images > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cards.no-images .cards-card-body h3 {
+    font-size: 64px;
+    line-height: 57.6px;
+  }
+}

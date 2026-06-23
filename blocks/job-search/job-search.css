@@ -1,0 +1,56 @@
+.job-search {
+  background-color: #0064ff;
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.job-search .job-search-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.job-search h2 {
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 0 24px;
+}
+
+.job-search .job-search-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.job-search select {
+  flex: 1 1 200px;
+  max-width: 260px;
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 2px;
+  background-color: #fff;
+  font: inherit;
+  color: var(--text-color);
+}
+
+.job-search a.job-search-go {
+  display: inline-block;
+  padding: 12px 32px;
+  background-color: #000a3c;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+@media (width >= 900px) {
+  .job-search {
+    padding: 56px 32px;
+  }
+
+  .job-search .job-search-controls {
+    flex-wrap: nowrap;
+  }
+}

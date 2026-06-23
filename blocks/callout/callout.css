@@ -1,0 +1,95 @@
+.callout {
+  background-color: #f3f4f6;
+  padding: 48px 24px;
+  text-align: left;
+}
+
+.callout .callout-content {
+  max-width: 1200px;
+  margin: 0;
+}
+
+.callout .callout-content > * {
+  margin: 0 0 24px;
+}
+
+.callout .callout-content > *:last-child {
+  margin-bottom: 0;
+}
+
+.callout .callout-content h2,
+.callout .callout-content h3,
+.callout .callout-content h4 {
+  margin: 0 0 24px;
+  color: var(--vista-navy);
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.callout .callout-content p {
+  color: var(--vista-navy);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* CTA: large plain navy text link with a trailing arrow (not a pill button). */
+.callout .callout-content p:has(> .callout-cta) {
+  margin-top: 24px;
+}
+
+.callout .callout-content a.callout-cta:any-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: none;
+  color: var(--vista-navy);
+  font-family: var(--heading-font-family);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.callout .callout-content a.callout-cta:any-link::after {
+  content: '';
+  width: 0.9em;
+  height: 0.9em;
+  background-color: var(--vista-navy);
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M8 20h22M22 11l9 9-9 9" stroke="black" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat center / contain;
+  transition: transform 0.2s ease;
+}
+
+.callout .callout-content a.callout-cta:hover {
+  color: var(--vista-navy);
+  text-decoration: none;
+}
+
+.callout .callout-content a.callout-cta:hover::after {
+  transform: translateX(4px);
+}
+
+@media (width >= 900px) {
+  .callout {
+    padding: 80px 64px;
+  }
+
+  .callout .callout-content h2,
+  .callout .callout-content h3,
+  .callout .callout-content h4 {
+    font-size: 112px;
+    line-height: 100.8px;
+  }
+
+  .callout .callout-content a.callout-cta:any-link {
+    font-size: 40px;
+  }
+}

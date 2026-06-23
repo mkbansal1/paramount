@@ -1,0 +1,93 @@
+.hero-page-container .hero-page-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Text content area (title + eyebrow). On the navy band it gets padding; the
+   image (when present) renders below as a full-width banner. */
+.hero-page > div {
+  width: 100%;
+}
+
+.hero-page .hero-page-text,
+.hero-page > div:last-child {
+  padding: 48px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 120px;
+}
+
+.hero-page h1,
+.hero-page h2,
+.hero-page h3,
+.hero-page h4,
+.hero-page h5,
+.hero-page h6,
+.hero-page p {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--background-color);
+}
+
+.hero-page h1 {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Eyebrow / subtitle line above the title (the first <p> before the h1). */
+.hero-page p:first-child {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: var(--body-font-size-xs);
+  font-weight: 600;
+  margin: 0 auto 8px;
+  opacity: 0.85;
+}
+
+/* Text-only hero: when no background image, inherit text color unless the
+   section provides a dark background (see vista-navy section styling below). */
+.hero-page.no-image * {
+  color: var(--text-color);
+}
+
+/* Image hero: the picture is a full-width banner BELOW the navy title band. */
+.hero-page picture {
+  display: block;
+  line-height: 0;
+}
+
+.hero-page picture img {
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: cover;
+}
+
+/* Navy page-hero band (applied via section metadata style="vista-navy").
+   Title text sits on the navy band; for image heroes the band wraps the title
+   and the image follows below it. */
+.section.vista-navy {
+  background-color: #000a3c;
+}
+
+.section.vista-navy .hero-page *,
+.section.vista-navy .breadcrumb * {
+  color: #fff;
+}
+
+@media (width >= 900px) {
+  .hero-page .hero-page-text,
+  .hero-page > div:last-child {
+    padding: 56px 32px;
+    min-height: 160px;
+  }
+}
