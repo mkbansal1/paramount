@@ -1,0 +1,10 @@
+/* Right-aligned effective/"As of" date line at the top of legal documents. */
+.legal-date.block {
+  margin: 0 0 16px;
+}
+
+.legal-date.block p {
+  margin: 0;
+  text-align: right;
+  font-family: var(--body-font-family);
+}

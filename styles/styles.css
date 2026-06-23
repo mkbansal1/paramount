@@ -500,3 +500,28 @@ body.press-release main .default-content-wrapper > .press-byline-row > p {
   text-transform: uppercase;
   color: #3c3e4e;
 }
+
+/* ===========================================================================
+ * Legal-terms template (body.legal-terms)
+ * Long-form legal/policy docs reuse the shared hero-page block + default-content
+ * body, but the live legal layout is a 160px uppercase Vista Sans title on the
+ * navy band and a narrow 640px centered reading column for the body. Scope all
+ * overrides to body.legal-terms so the content-page hero (which shares hero-page)
+ * is untouched. Values matched to live www.paramount.com.
+ * ======================================================================== */
+
+/* Title: 160px uppercase Vista Sans on the navy band (content-page hero is 112px). */
+body.legal-terms .hero-page h1 {
+  font-size: var(--heading-size-xxl);
+}
+
+/* Body: narrow 640px centered editorial reading column (not 1200px full width). */
+body.legal-terms main .section:not(.vista-navy) .default-content-wrapper {
+  max-width: 704px;
+}
+
+body.legal-terms main .section:not(.vista-navy) .default-content-wrapper > * {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
