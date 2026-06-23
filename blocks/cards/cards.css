@@ -82,6 +82,20 @@
   text-decoration: none;
 }
 
+/* Featured-awards variant (/news/awards top 3): accent-blue cards with white
+   text, distinguishing them from the plain grey listing below. */
+.cards.awards-featured > ul > li {
+  background-color: #0064ff;
+}
+
+.cards.awards-featured .cards-card-body h3,
+.cards.awards-featured .cards-card-body h3 a,
+.cards.awards-featured .cards-card-body p,
+.cards.awards-featured .cards-card-body p a,
+.cards.awards-featured .cards-card-body em {
+  color: #fff;
+}
+
 @media (width >= 600px) {
   .cards.no-images > ul {
     grid-template-columns: repeat(2, 1fr);
