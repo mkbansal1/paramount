@@ -416,3 +416,87 @@ main .section.vista-navy .default-content-wrapper h2,
 main .section.vista-navy .default-content-wrapper h3 {
   color: #fff;
 }
+
+/* ===========================================================================
+ * Press-release template (body.press-release)
+ * Press releases reuse the shared hero-page block + default-content body, but
+ * the live press layout is lighter than the content-page hero: a smaller
+ * Peak Sans title, a muted-grey eyebrow, and a narrow 640px editorial reading
+ * column. Scope all overrides to body.press-release so the content-page hero
+ * (which shares hero-page) is untouched. Values matched to live www.paramount.com.
+ * ======================================================================== */
+
+/* Press banner title: Peak Sans, 64px, regular weight, normal case (NOT the
+ * 112px uppercase Vista Sans content-page hero). */
+body.press-release .hero-page h1 {
+  font-family: var(--body-font-family);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 72px;
+  text-transform: none;
+  max-width: 1312px;
+}
+
+/* Eyebrow "Paramount Press": muted blue-grey, wider tracking, larger gap. */
+body.press-release .hero-page p:first-child {
+  color: #8386a0;
+  letter-spacing: 1.4px;
+  margin-bottom: 24px;
+  opacity: 1;
+  max-width: 1312px;
+}
+
+/* On the navy band the shared rule forces all hero text white; keep the title
+ * white but restore the muted-grey eyebrow. */
+body.press-release .section.vista-navy .hero-page p:first-child {
+  color: #8386a0;
+}
+
+/* The press parser emits two cells (text + an empty image cell). hero-page.css
+ * pads the LAST child + gives it 160px min-height, which lands on the EMPTY
+ * image cell and adds ~160px of dead space below the title. For the no-image
+ * press banner, collapse the empty image cell and move padding to the text cell
+ * so the banner height tracks the title (matches the ~344px live banner). */
+body.press-release .hero-page.no-image > div:last-child {
+  display: none;
+}
+
+body.press-release .hero-page > div:first-child {
+  padding: 64px 32px;
+  min-height: 0;
+}
+
+/* Body: narrow 640px centered editorial reading column. */
+body.press-release main .section:not(.vista-navy) .default-content-wrapper {
+  max-width: 704px;
+}
+
+body.press-release main .section:not(.vista-navy) .default-content-wrapper > * {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Byline row: "By Paramount Staff" + Share control on one line, with a divider
+   beneath it (matches live: 1px #bec0cd border, 24px below text, 48px before
+   the body). The row is synthesized at runtime (byline <p> + share block). */
+body.press-release main .section:not(.vista-navy) .default-content-wrapper > .press-byline-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 640px;
+  margin: 0 auto 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #bec0cd;
+}
+
+body.press-release main .default-content-wrapper > .press-byline-row > p {
+  margin: 0;
+  max-width: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #3c3e4e;
+}
