@@ -1,0 +1,72 @@
+.columns-feature .columns-feature-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: center;
+  margin: 0 0 48px;
+}
+
+.columns-feature .columns-feature-media {
+  line-height: 0;
+}
+
+.columns-feature .columns-feature-media img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.columns-feature .columns-feature-content > * {
+  margin: 0 0 12px;
+}
+
+/* Eyebrow label: first paragraph (often emphasized) above the heading. */
+.columns-feature .columns-feature-content p:first-child em,
+.columns-feature .columns-feature-content p:first-child strong {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: var(--body-font-size-xs);
+  color: var(--text-color);
+}
+
+.columns-feature .columns-feature-content h2,
+.columns-feature .columns-feature-content h3 {
+  margin: 0 0 12px;
+  text-transform: uppercase;
+}
+
+.columns-feature .columns-feature-content a {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+@media (width >= 900px) {
+  .columns-feature .columns-feature-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    margin: 0 0 72px;
+  }
+
+  /* Default (even) rows: image on the RIGHT, text on the left — matches the
+     live first feature row (image-right). Odd rows flip to image-left. */
+  .columns-feature .columns-feature-media {
+    order: 2;
+  }
+
+  .columns-feature .columns-feature-content {
+    order: 1;
+  }
+
+  .columns-feature .columns-feature-row-reverse .columns-feature-media {
+    order: 1;
+  }
+
+  .columns-feature .columns-feature-row-reverse .columns-feature-content {
+    order: 2;
+  }
+}

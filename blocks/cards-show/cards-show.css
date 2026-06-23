@@ -4,6 +4,15 @@
  * Columns: 1 (mobile) / 3 (tablet) / 4 (desktop). 32px gaps.
  * Each card: portrait poster (304x456 => 2/3) + show title beneath, navy text. */
 
+/* Source slider renders a 1312px-wide row of four 304px posters separated by
+ * 32px gaps (304*4 + 32*3 = 1312). The default EDS section caps content at
+ * 1200px, which squeezes the posters to 276px. Widen this block's wrapper so
+ * the posters can reach their native 304px while staying centered and
+ * responsive. */
+main > .section > .cards-show-wrapper {
+  max-width: 1312px;
+}
+
 .cards-show > ul {
   list-style: none;
   margin: 0;

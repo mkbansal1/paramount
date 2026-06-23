@@ -329,6 +329,17 @@ main .section.highlight {
   padding: 40px 0;
 }
 
+/* Centered section (e.g. careers intro RTE blocks). */
+main .section.center {
+  text-align: center;
+}
+
+main .section.center .default-content-wrapper {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Paramount brand section variants */
 main .section.brand-blue {
   background-color: var(--brand-blue);
