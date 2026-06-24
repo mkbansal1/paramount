@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/businesses/studios",
+  "path": "about/businesses/studios",
+  "timestamp": "2026-06-23T08:53:00.103Z",
+  "title": "Studios | Paramount",
+  "template": "content-page",
+  "blocks": [
+    "hero-page",
+    "columns-info",
+    "columns-info",
+    "cards",
+    "definition-list"
+  ]
+}

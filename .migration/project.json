@@ -1,0 +1,11 @@
+{
+  "sites": {
+    "paramount": {
+      "previewOrg": "mkbansal1",
+      "previewSite": "paramount",
+      "contentHostUrl": "https://content.da.live/mkbansal1/paramount/",
+      "libraryUrl": "https://main--sta-boilerplate--aemdemos.aem.page/tools/sidekick/library.json"
+    }
+  },
+  "type": "da"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/news/inside-cbs-2026-primetime-schedule",
+  "path": "news/inside-cbs-2026-primetime-schedule",
+  "timestamp": "2026-06-23T09:20:48.480Z",
+  "title": "Inside CBS’ 2026 Primetime Schedule | Paramount",
+  "template": "news-article",
+  "blocks": [
+    "news-hero"
+  ]
+}

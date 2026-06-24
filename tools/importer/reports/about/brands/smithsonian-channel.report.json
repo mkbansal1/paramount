@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/brands/smithsonian-channel",
+  "path": "about/brands/smithsonian-channel",
+  "timestamp": "2026-06-22T09:24:43.151Z",
+  "title": "Smithsonian Channel | Paramount",
+  "template": "brand-detail",
+  "blocks": [
+    "brand-hero",
+    "columns-info",
+    "columns-info",
+    "cards-show",
+    "cards-brand"
+  ]
+}

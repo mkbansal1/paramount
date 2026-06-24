@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/businesses/us-distribution",
+  "path": "about/businesses/us-distribution",
+  "timestamp": "2026-06-23T08:52:40.361Z",
+  "title": "U.S. Distribution | Paramount",
+  "template": "content-page",
+  "blocks": [
+    "hero-page",
+    "columns-info",
+    "columns-info",
+    "cards",
+    "accordion"
+  ]
+}

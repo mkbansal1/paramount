@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/press/paramount-skydance-corporation-announces-offer-to-purchase-for-cash-any-and-all-of-the-identified-notes-in-each-series-of-existing-tender-offer-notes-and-offer-to-exchange-for-newly-issued-notes-of-paramount-skydance-corporation-new-psky-notes",
+  "path": "press/paramount-skydance-corporation-announces-offer-to-purchase-for-cash-any-and-all-of-the-identified-notes-in-each-series-of-existing-tender-offer-notes-and-offer-to-exchange-for-newly-issued-notes-of-paramount-skydance-corporation-new-psky-notes",
+  "timestamp": "2026-06-23T13:28:58.866Z",
+  "title": "Paramount Skydance Corporation Announces: Offer to Purchase for Cash Any and All of the Identified Notes in each Series of Existing Tender Offer Notes and Offer to Exchange for Newly Issued Notes of Paramount Skydance Corporation (\"New PSKY Notes\") | Paramount",
+  "template": "press-release",
+  "blocks": [
+    "press-hero",
+    "offer-table",
+    "offer-table",
+    "offer-table",
+    "offer-table"
+  ]
+}

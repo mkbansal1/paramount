@@ -1,0 +1,42 @@
+{
+  "variantName": "hero-page",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-06-22T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.paramount.com/about/board-of-directors",
+    "originPage": "Board of Directors (content-page template)",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "compact",
+    "purpose": "page-hero",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "breadcrumb (sibling block) + large page title, no media",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "content-page template heroes (about, businesses, careers sub-pages)",
+      "text-only navy title banners with a breadcrumb above the title",
+      "interior page intro banners without background media",
+      "press-release template title banners (eyebrow 'Paramount Press' + title on a navy band)"
+    ],
+    "notSuitableFor": [
+      "full-bleed brand media banners (use brand-hero)",
+      "rotating multi-image carousels (use carousel-hero)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/about/board-of-directors",
+      "/press/paramount-global-reports-first-quarter-2025-earnings-results"
+    ],
+    "reuseCount": 2,
+    "lastUsed": "2026-06-23T10:06:00.000Z"
+  }
+}

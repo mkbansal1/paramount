@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/news/inside-the-top-gun-archive-with-charlotte-barker-and-chuck-woodfill",
+  "path": "news/inside-the-top-gun-archive-with-charlotte-barker-and-chuck-woodfill",
+  "timestamp": "2026-06-23T09:20:53.189Z",
+  "title": "Inside the ‘Top Gun’ Archive with Charlotte Barker and Chuck Woodfill | Paramount",
+  "template": "news-article",
+  "blocks": [
+    "news-hero",
+    "quote",
+    "quote"
+  ]
+}

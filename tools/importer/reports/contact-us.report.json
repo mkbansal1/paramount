@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/contact-us",
+  "path": "contact-us",
+  "timestamp": "2026-06-23T15:46:34.263Z",
+  "title": "Contact Us | Paramount",
+  "template": "content-page",
+  "blocks": [
+    "hero-page",
+    "form-placeholder"
+  ]
+}

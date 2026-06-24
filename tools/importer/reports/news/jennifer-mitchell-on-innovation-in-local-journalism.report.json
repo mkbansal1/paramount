@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/news/jennifer-mitchell-on-innovation-in-local-journalism",
+  "path": "news/jennifer-mitchell-on-innovation-in-local-journalism",
+  "timestamp": "2026-06-23T09:20:58.716Z",
+  "title": "Jennifer Mitchell on Innovation in Local Journalism | Paramount",
+  "template": "news-article",
+  "blocks": [
+    "news-hero"
+  ]
+}

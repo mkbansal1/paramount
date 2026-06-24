@@ -1,0 +1,38 @@
+{
+  "variantName": "brand-hero",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-06-22T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.paramount.com/about/brands/mtv",
+    "originPage": "MTV brand-detail page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "wide",
+    "purpose": "brand-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "full-bleed background media + large brand title",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "brand-detail page hero banners",
+      "single full-bleed title-over-media banners",
+      "dark hero sections with a prominent brand name/logo"
+    ],
+    "notSuitableFor": [
+      "rotating multi-image carousels (use carousel-hero)",
+      "text-only intro heroes with CTAs"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/about/brands/mtv"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-22T00:00:00.000Z"
+  }
+}

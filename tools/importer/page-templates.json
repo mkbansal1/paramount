@@ -1,0 +1,626 @@
+{
+  "metadata": {
+    "projectType": "da"
+  },
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": [
+        "https://www.paramount.com/"
+      ],
+      "representativeUrl": "https://www.paramount.com/",
+      "coverageGaps": [],
+      "description": "Paramount corporate homepage: full-bleed hero slider, featured brands grid, and a culture/careers section. Header and footer are auto-populated.",
+      "blocks": [
+        {
+          "name": "carousel-hero",
+          "instances": [
+            ".hero-header-transparent.wrapper-hero-slider"
+          ]
+        },
+        {
+          "name": "cards-brand",
+          "instances": [
+            ".wrapper-hm-brand .hm-brand-grid-container"
+          ]
+        },
+        {
+          "name": "columns-culture",
+          "instances": [
+            ".culture-section .culture-sec-content"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1-hero",
+          "name": "Hero Slider",
+          "selector": "main #block-paramount-content article .hero-header-transparent",
+          "style": null,
+          "blocks": [
+            "carousel-hero"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2-brands",
+          "name": "Brands Grid",
+          "selector": "main #block-paramount-content article .wrapper-hm-brand",
+          "style": "brand-blue",
+          "blocks": [
+            "cards-brand"
+          ],
+          "defaultContent": [
+            ".wrapper-hm-brand .hm-brand-header",
+            ".wrapper-hm-brand .brands-btn"
+          ]
+        },
+        {
+          "id": "section-3-culture",
+          "name": "Culture / Shape the Future",
+          "selector": "main #block-paramount-content article .culture-section",
+          "style": "vista-navy",
+          "blocks": [
+            "columns-culture"
+          ],
+          "defaultContent": []
+        }
+      ]
+    },
+    {
+      "name": "brand-detail",
+      "urls": [
+        "https://www.paramount.com/about/brands/mtv"
+      ],
+      "representativeUrl": "https://www.paramount.com/about/brands/mtv",
+      "coverageGaps": [],
+      "description": "Brand detail page: breadcrumb + full-bleed brand hero, a two-column description + links section, a related-content card grid, and a related-brands card grid with a View All button.",
+      "blocks": [
+        {
+          "name": "brand-hero",
+          "instances": [
+            ".podcast-header-wrapper"
+          ]
+        },
+        {
+          "name": "columns-info",
+          "instances": [
+            ".wrapper-content-desc .container .row.g-0",
+            ".wrapper-content-desc .row"
+          ]
+        },
+        {
+          "name": "cards-show",
+          "instances": [
+            ".wrapper-brand-tile .brand-tile-slider"
+          ]
+        },
+        {
+          "name": "cards-brand",
+          "instances": [
+            ".wrapper-related-brand .related-brand"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1-hero",
+          "name": "Brand hero",
+          "selector": ".podcast-header-wrapper",
+          "style": null,
+          "blocks": [
+            "brand-hero"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2-desc",
+          "name": "Brand description + links",
+          "selector": ".wrapper-content-desc",
+          "style": null,
+          "blocks": [
+            "columns-info"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3-related-content",
+          "name": "Related content",
+          "selector": ".wrapper-brand-tile",
+          "style": null,
+          "blocks": [
+            "cards-show"
+          ],
+          "defaultContent": [
+            ".wrapper-brand-tile .coh-heading"
+          ]
+        },
+        {
+          "id": "section-4-related-brands",
+          "name": "Related brands",
+          "selector": ".wrapper-related-brand",
+          "style": null,
+          "blocks": [
+            "cards-brand"
+          ],
+          "defaultContent": [
+            ".wrapper-related-brand .coh-heading",
+            ".wrapper-related-brand .related-brand-btn"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "content-page",
+      "urls": [
+        "https://www.paramount.com/about/board-of-directors",
+        "https://www.paramount.com/mental-health",
+        "https://www.paramount.com/production-finance",
+        "https://www.paramount.com/ncaatc",
+        "https://www.paramount.com/networkdocs",
+        "https://www.paramount.com/support",
+        "https://www.paramount.com/careers",
+        "https://www.paramount.com/licensing",
+        "https://www.paramount.com/contact-us"
+      ],
+      "representativeUrl": "https://www.paramount.com/about/board-of-directors",
+      "coverageGaps": [],
+      "description": "Standard corporate content page: text-only navy page hero (breadcrumb + title) followed by a flexible stack of sections — leadership/people card grids, two-column description+links, related-content card carousels, and big-number stat strips. Covers about, businesses, and careers sub-pages.",
+      "blocks": [
+        {
+          "name": "hero-page",
+          "instances": [
+            ".podcast-header-wrapper",
+            ".wrapper-hero-sec"
+          ]
+        },
+        {
+          "name": "cards-people",
+          "instances": [
+            ".wrapper-leadership-list ul.leadership-tile-slider"
+          ]
+        },
+        {
+          "name": "columns-info",
+          "instances": [
+            ".wrapper-content-desc .container .row.g-0",
+            ".wrapper-content-desc .row"
+          ]
+        },
+        {
+          "name": "cards-show",
+          "instances": [
+            ".wrapper-tile-carousel .carousel-with-tiles",
+            ".wrapper-tile-carousel .brand-tile-slider",
+            ".wrapper-brand-tile .brand-tile-slider",
+            ".wrapper-podcast ul.podcast-listing",
+            ".wrapper-business-cards ul.business-cards-list"
+          ]
+        },
+        {
+          "name": "stats",
+          "instances": [
+            ".wrapper-content-breaker ul.contentBreaker-list"
+          ]
+        },
+        {
+          "name": "cards",
+          "instances": [
+            ".wrapper-text-col-with-links ul.text-col-link-list",
+            "ul.three-col-text-card-list",
+            ".wrapper-aboutValues ul.ourValues-list",
+            "ul.curated-awards",
+            "ul.bold-tricolumn-list"
+          ]
+        },
+        {
+          "name": "columns-feature",
+          "instances": [
+            ".wrapper-media-card",
+            ".wrapper-history-carousel"
+          ]
+        },
+        {
+          "name": "testimonials",
+          "instances": [
+            ".cardCarousel-text-slider"
+          ]
+        },
+        {
+          "name": "accordion",
+          "instances": [
+            ".wrapper-accordion-faq",
+            ".wrapper-accordion-sm-layout"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1-hero",
+          "name": "Page hero",
+          "selector": ".podcast-header-wrapper",
+          "style": null,
+          "blocks": [
+            "hero-page"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-1b-intro",
+          "name": "Centered intro RTE (careers)",
+          "selector": ".wrapper-rte-block.wrapper-container-large",
+          "style": "center",
+          "blocks": [],
+          "defaultContent": [
+            ".wrapper-rte-block.wrapper-container-large"
+          ]
+        },
+        {
+          "id": "section-2-leadership",
+          "name": "Leadership / people listing",
+          "selector": ".wrapper-leadership-list",
+          "style": null,
+          "repeat": true,
+          "blocks": [
+            "cards-people"
+          ],
+          "defaultContent": [
+            ".wrapper-leadership-list .section-heading"
+          ]
+        },
+        {
+          "id": "section-3-desc",
+          "name": "Description + links",
+          "selector": ".wrapper-content-desc",
+          "style": null,
+          "blocks": [
+            "columns-info"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4-related-content",
+          "name": "Related content",
+          "selector": ".wrapper-tile-carousel",
+          "style": null,
+          "blocks": [
+            "cards-show"
+          ],
+          "defaultContent": [
+            ".wrapper-tile-carousel .section-heading"
+          ]
+        },
+        {
+          "id": "section-5-stats",
+          "name": "Stat strip",
+          "selector": ".wrapper-content-breaker",
+          "style": null,
+          "blocks": [
+            "stats"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-6-more",
+          "name": "More businesses / link grid",
+          "selector": ".wrapper-text-col-with-links",
+          "style": null,
+          "blocks": [
+            "cards"
+          ],
+          "defaultContent": [
+            ".wrapper-text-col-with-links .section-heading"
+          ]
+        },
+        {
+          "id": "section-7-podcasts",
+          "name": "Podcast card grids",
+          "selector": ".wrapper-podcast",
+          "style": null,
+          "blocks": [
+            "cards-show"
+          ],
+          "defaultContent": [
+            ".wrapper-podcast .section-heading"
+          ]
+        },
+        {
+          "id": "section-8-values",
+          "name": "Compliance / values card grid (/about)",
+          "selector": ".wrapper-aboutValues",
+          "style": null,
+          "repeat": true,
+          "blocks": [
+            "cards"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-9-feature",
+          "name": "Media-card feature rows (careers)",
+          "selector": ".wrapper-media-card",
+          "style": null,
+          "repeat": true,
+          "blocks": [
+            "columns-feature"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-10-multiline",
+          "name": "Multiline definition list (benefits wellness)",
+          "selector": ".wrapper-multiline",
+          "style": null,
+          "blocks": [
+            "definition-list"
+          ],
+          "defaultContent": [
+            ".wrapper-multiline .section-heading"
+          ]
+        },
+        {
+          "id": "section-11-faq",
+          "name": "FAQ accordion (internships)",
+          "selector": ".wrapper-accordion-faq",
+          "style": null,
+          "blocks": [
+            "accordion"
+          ],
+          "defaultContent": [
+            ".wrapper-accordion-faq .section-heading"
+          ]
+        },
+        {
+          "id": "section-12-callout",
+          "name": "Pusher callout / download CTA (grey band)",
+          "selector": ".pusher-wrapper",
+          "style": null,
+          "repeat": true,
+          "blocks": [
+            "callout"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-13-jobsearch",
+          "name": "Job-search placeholder (explore the possibilities)",
+          "selector": ".wrapper-career-filter",
+          "style": null,
+          "blocks": [
+            "job-search"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-14-business-cards",
+          "name": "Business cards grid (/about/businesses index)",
+          "selector": ".wrapper-business-cards",
+          "style": null,
+          "blocks": [
+            "cards-show"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-15-accordion-sm",
+          "name": "Small-layout accordion (business detail Our Approach)",
+          "selector": ".wrapper-accordion-sm-layout",
+          "style": null,
+          "blocks": [
+            "accordion"
+          ],
+          "defaultContent": [
+            ".wrapper-accordion-sm-layout .section-heading"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "press-release",
+      "urls": [
+        "https://www.paramount.com/press/paramount-global-reports-first-quarter-2025-earnings-results",
+        "https://www.paramount.com/press/meta-executive-dane-glasgow-to-join-paramount-as-chief-product-officer-driving-tech-innovation-and-product-strategy",
+        "https://www.paramount.com/press/paramount-adds-dennis-k-cinelli-to-its-board-of-directors",
+        "https://www.paramount.com/press/paramount-and-skydance-announce-anticipated-closing-date-deadlines-to-elect-merger-consideration-and-change-of-ticker-symbol-effective-at-the-closing",
+        "https://www.paramount.com/press/paramount-and-tko-announce-historic-ufc-media-rights-agreement",
+        "https://www.paramount.com/press/paramount-announces-deal-to-acquire-the-free-press",
+        "https://www.paramount.com/press/paramount-announces-landmark-media-rights-agreement-with-zuffa-boxing",
+        "https://www.paramount.com/press/paramount-appoints-jay-askinasi-as-chief-revenue-officer",
+        "https://www.paramount.com/press/paramount-appoints-josh-silverman-as-president-of-global-products-experiences",
+        "https://www.paramount.com/press/paramount-appoints-makan-delrahim-as-chief-legal-officer",
+        "https://www.paramount.com/press/paramount-declares-quarterly-cash-dividend-1",
+        "https://www.paramount.com/press/paramount-global-and-park-county-extend-overall-deal",
+        "https://www.paramount.com/press/paramount-pictures-and-legendary-entertainment-strike-strategic-three-year-global-distribution-deal",
+        "https://www.paramount.com/press/paramount-reports-first-quarter-2026-financial-results",
+        "https://www.paramount.com/press/paramount-signs-multi-year-exclusive-deal-with-matt-and-ross-duffer-the-visionary-duo-behind-the-global-phenomenon-stranger-things",
+        "https://www.paramount.com/press/paramount-strikes-major-film-deal-with-activision-to-bring-call-of-duty-to-the-big-screen",
+        "https://www.paramount.com/press/paramount-to-report-third-quarter-2025-financial-results-on-november-10-2025",
+        "https://www.paramount.com/press/skydance-media-and-paramount-global-complete-merger-creating-next-generation-media-company",
+        "https://www.paramount.com/press/paramount-affirms-commitment-to-superior-30-per-share-all-cash-offer-for-warner-bros-discovery",
+        "https://www.paramount.com/press/paramount-amends-its-superior-30-per-share-all-cash-offer-for-warner-bros-discovery",
+        "https://www.paramount.com/press/paramount-appoints-dennis-k-cinelli-as-chief-financial-officer-and-adds-andrew-campion-to-its-board-of-directors",
+        "https://www.paramount.com/press/paramount-chief-financial-officer-dennis-cinelli-to-participate-in-moffettnathansons-media-internet-communications-conference",
+        "https://www.paramount.com/press/paramount-comments-on-warner-bros-discovery-boards-determination-that-paramount-proposal-could-reasonably-be-expected-to-lead-to-a-superior-proposal",
+        "https://www.paramount.com/press/paramount-comments-on-warner-bros-discovery-disclosures",
+        "https://www.paramount.com/press/paramount-confirms-submission-of-revised-proposal-to-acquire-warner-bros-discovery",
+        "https://www.paramount.com/press/paramount-declares-quarterly-cash-dividend",
+        "https://www.paramount.com/press/paramount-declares-quarterly-cash-dividend-0",
+        "https://www.paramount.com/press/paramount-enhances-its-superior-30-per-share-all-cash-offer-for-warner-bros-discovery-and-provides-update-on-regulatory-progress",
+        "https://www.paramount.com/press/paramount-files-proxy-materials-and-extends-tender-offer",
+        "https://www.paramount.com/press/paramount-forms-industrial-relations-division-under-co-leadership-of-nicole-lang-sheldon-kasdan",
+        "https://www.paramount.com/press/paramount-introduces-programmatic-access-to-marquee-live-sports-on-paramount",
+        "https://www.paramount.com/press/paramount-issues-statement-on-jeff-shell",
+        "https://www.paramount.com/press/paramount-launches-all-cash-tender-offer-to-acquire-warner-bros-discovery-for-30-per-share",
+        "https://www.paramount.com/press/paramount-launches-global-publishing-imprint-to-expand-iconic-franchises-and-deepen-original-storytelling",
+        "https://www.paramount.com/press/paramount-provides-update-to-warner-bros-discovery-shareholders-on-actions-it-is-taking-to-advance-its-superior-30-per-share-all-cash-offer",
+        "https://www.paramount.com/press/paramount-reaffirms-commitment-to-delivering-superior-30-per-share-all-cash-offer-to-warner-bros-discovery-shareholders",
+        "https://www.paramount.com/press/paramount-reports-fourth-quarter-and-full-year-2025-financial-results",
+        "https://www.paramount.com/press/paramount-reports-third-quarter-2025-earnings-results",
+        "https://www.paramount.com/press/paramount-sends-letter-to-warner-bros-discovery-shareholders",
+        "https://www.paramount.com/press/paramount-skydance-corporation-announces-extension-of-expiration-dates-of-previously-announced-exchange-offers-and-tender-offers",
+        "https://www.paramount.com/press/paramount-skydance-corporation-announces-offer-to-purchase-for-cash-any-and-all-of-the-identified-notes-in-each-series-of-existing-tender-offer-notes-and-offer-to-exchange-for-newly-issued-notes-of-paramount-skydance-corporation-new-psky-notes",
+        "https://www.paramount.com/press/paramount-skydance-corporation-announces-results-of-warner-bros-consent-solicitations",
+        "https://www.paramount.com/press/paramount-to-acquire-warner-bros-discovery-to-form-next-generation-global-media-and-entertainment-company",
+        "https://www.paramount.com/press/paramount-to-report-first-quarter-2026-financial-results-on-may-4-2026",
+        "https://www.paramount.com/press/paramount-to-report-fourth-quarter-and-full-year-2025-financial-results-on-february-25-2026",
+        "https://www.paramount.com/press/paramount-writers-mentoring-program-applications-now-open"
+      ],
+      "representativeUrl": "https://www.paramount.com/press/paramount-global-reports-first-quarter-2025-earnings-results",
+      "coverageGaps": [],
+      "description": "Corporate press release: a navy press banner (eyebrow 'Paramount Press' + title) followed by an optional byline and a single-column rich-text body (dateline lead, links, optional inline logo image, 'About Paramount' boilerplate). An auto-generated 'More Press' related list at the bottom is template chrome and is dropped. Earnings releases link financial statements out to Investor Relations, but note tender/exchange offer releases DO inline PRNewswire data tables (Type of Offer / CUSIP / principal amount) — these are mapped to the offer-table parser, which rebuilds them as clean single-line-cell tables that survive the markdown round-trip.",
+      "blocks": [
+        {
+          "name": "press-hero",
+          "instances": [
+            ".press-release-banner-wrapper"
+          ]
+        },
+        {
+          "name": "offer-table",
+          "instances": [
+            ".content-table-wrapper"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1-press-banner",
+          "name": "Press release banner",
+          "selector": ".press-release-banner-wrapper",
+          "style": null,
+          "blocks": [
+            "press-hero"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2-body",
+          "name": "Press release body",
+          "selector": ".wrapper-press-release-template",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".wrapper-press-release-template .press-release-container"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "news-article",
+      "urls": [
+        "https://www.paramount.com/news/inside-the-top-gun-archive-with-charlotte-barker-and-chuck-woodfill"
+      ],
+      "representativeUrl": "https://www.paramount.com/news/inside-the-top-gun-archive-with-charlotte-barker-and-chuck-woodfill",
+      "coverageGaps": [],
+      "description": "Editorial news article: a news banner hero (date/topic eyebrow + title + intro + lead image), an optional byline, then a single-column rich-text body with inline images, optional full-width pull quotes, and optional YouTube video embeds.",
+      "blocks": [
+        {
+          "name": "news-hero",
+          "instances": [
+            ".wrapper-news-banner"
+          ]
+        },
+        {
+          "name": "news-video",
+          "instances": [
+            "iframe[src*=\"youtube\"]"
+          ]
+        },
+        {
+          "name": "quote",
+          "instances": [
+            ".wrapper-fullWidth-quote"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1-hero",
+          "name": "News banner hero",
+          "selector": ".wrapper-news-banner",
+          "style": null,
+          "blocks": [
+            "news-hero"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2-body",
+          "name": "Article body",
+          "selector": ".wrapper-rte-block",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".wrapper-rte-block"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "legal-terms",
+      "urls": [
+        "https://www.paramount.com/cbs-research-survey-terms-of-use",
+        "https://www.paramount.com/cbs-advertising-sales-agreement-terms-and-conditions",
+        "https://www.paramount.com/cbs-broadcasting-inc-and-turner-broadcasting-system-advertising-sales-agreement-terms-and-conditions",
+        "https://www.paramount.com/cbs-supplier-compliance-policy",
+        "https://www.paramount.com/paramount-press-express-terms-of-use",
+        "https://www.paramount.com/paramount-studios-facilities-business-to-business-terms-of-use",
+        "https://www.paramount.com/pluto-tv-additional-content-delivery-guidelines",
+        "https://www.paramount.com/pluto-tv-advertising-guidelines",
+        "https://www.paramount.com/pluto-tv-cla-standard-terms",
+        "https://www.paramount.com/pluto-tv-content-delivery-guidelines",
+        "https://www.paramount.com/recruitment-privacy-notice-apac",
+        "https://www.paramount.com/recruitment-privacy-notice-eea-recruitment-privacy-notice-eea-switzerland",
+        "https://www.paramount.com/supplemental-terms-and-conditions-for-political-advertising",
+        "https://www.paramount.com/tv-city-panel-privacy-policy",
+        "https://www.paramount.com/user-content-submission-agreement",
+        "https://www.paramount.com/automated-employment-decision-tools",
+        "https://www.paramount.com/cbs-clip-licensing-group",
+        "https://www.paramount.com/digital-ads/self-service-terms-and-conditions",
+        "https://www.paramount.com/eeo-info-webpage",
+        "https://www.paramount.com/equal-opportunity-employer",
+        "https://www.paramount.com/paramount-data-subject-right-center",
+        "https://www.paramount.com/paramount-media-networks-clip-licensing",
+        "https://www.paramount.com/pluto-tv-licensor-insurance-requirements",
+        "https://www.paramount.com/pluto-tv-licensor-marketing-requirements",
+        "https://www.paramount.com/pluto-tv-live-stream-specifications",
+        "https://www.paramount.com/pre-employment-statement",
+        "https://www.paramount.com/program-practices",
+        "https://www.paramount.com/recruiting-fraud-statement"
+      ],
+      "representativeUrl": "https://www.paramount.com/cbs-research-survey-terms-of-use",
+      "coverageGaps": [],
+      "description": "Long-form legal/policy document: a navy title band (white h1, no eyebrow) followed by a single-column dense rich-text body. Some pages carry a right-aligned 'As of {date}' line at the top of the body and/or a 'Summary of Updates' section after an <hr> at the bottom; some pages are a list of localized PDF download links instead of prose. No media blocks. Root-level cms slugs migrated to canonical www host.",
+      "blocks": [
+        {
+          "name": "legal-hero",
+          "instances": [
+            ".header-text-container"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1-title",
+          "name": "Legal title band",
+          "selector": ".header-text-container",
+          "style": null,
+          "blocks": [
+            "legal-hero"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2-body",
+          "name": "Legal body",
+          "selector": ".wrapper-rte-block",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".wrapper-rte-block"
+          ]
+        }
+      ]
+    }
+  ]
+}

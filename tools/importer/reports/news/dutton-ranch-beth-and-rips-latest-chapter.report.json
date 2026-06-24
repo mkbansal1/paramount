@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/news/dutton-ranch-beth-and-rips-latest-chapter",
+  "path": "news/dutton-ranch-beth-and-rips-latest-chapter",
+  "timestamp": "2026-06-23T09:20:18.246Z",
+  "title": "'Dutton Ranch': Beth and Rip's Latest Chapter | Paramount",
+  "template": "news-article",
+  "blocks": [
+    "news-hero",
+    "news-video"
+  ]
+}

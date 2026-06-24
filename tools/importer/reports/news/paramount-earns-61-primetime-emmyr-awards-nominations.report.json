@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/news/paramount-earns-61-primetime-emmyr-awards-nominations",
+  "path": "news/paramount-earns-61-primetime-emmyr-awards-nominations",
+  "timestamp": "2026-06-23T09:21:22.644Z",
+  "title": "Paramount Earns 61 Primetime Emmy® Awards Nominations | Paramount",
+  "template": "news-article",
+  "blocks": [
+    "news-hero"
+  ]
+}

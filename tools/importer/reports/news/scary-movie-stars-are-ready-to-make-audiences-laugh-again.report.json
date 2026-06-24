@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/news/scary-movie-stars-are-ready-to-make-audiences-laugh-again",
+  "path": "news/scary-movie-stars-are-ready-to-make-audiences-laugh-again",
+  "timestamp": "2026-06-23T09:22:09.268Z",
+  "title": "'Scary Movie' Stars Are Ready to Make Audiences Laugh Again | Paramount",
+  "template": "news-article",
+  "blocks": [
+    "news-hero",
+    "news-video"
+  ]
+}

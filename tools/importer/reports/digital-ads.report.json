@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/digital-ads",
+  "path": "digital-ads",
+  "timestamp": "2026-06-23T08:54:43.946Z",
+  "title": "Digital Ads | Paramount",
+  "template": "content-page",
+  "blocks": [
+    "hero-page",
+    "cards"
+  ]
+}

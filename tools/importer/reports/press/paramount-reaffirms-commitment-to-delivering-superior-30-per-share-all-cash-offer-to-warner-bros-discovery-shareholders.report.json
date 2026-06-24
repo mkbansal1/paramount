@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/press/paramount-reaffirms-commitment-to-delivering-superior-30-per-share-all-cash-offer-to-warner-bros-discovery-shareholders",
+  "path": "press/paramount-reaffirms-commitment-to-delivering-superior-30-per-share-all-cash-offer-to-warner-bros-discovery-shareholders",
+  "timestamp": "2026-06-23T13:28:14.084Z",
+  "title": "PARAMOUNT REAFFIRMS COMMITMENT TO DELIVERING SUPERIOR $30 PER SHARE ALL-CASH OFFER TO WARNER BROS. DISCOVERY SHAREHOLDERS | Paramount",
+  "template": "press-release",
+  "blocks": [
+    "press-hero",
+    "offer-table",
+    "offer-table",
+    "offer-table",
+    "offer-table"
+  ]
+}

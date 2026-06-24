@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-brand",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-06-22T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.paramount.com/",
+    "originPage": "Paramount home page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "accent",
+    "density": "wide",
+    "purpose": "brand-showcase",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "poster image + brand logo + description + CTA link",
+    "buttonCount": 0,
+    "imageCount": 12
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "brand/portfolio grids",
+      "feature showcases with poster imagery",
+      "product or property listings with image + short copy + link"
+    ],
+    "notSuitableFor": [
+      "text-only card lists (use cards no-images)",
+      "single feature highlight"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index", "/about/brands/mtv"],
+    "reuseCount": 2,
+    "lastUsed": "2026-06-22T07:21:00.000Z"
+  }
+}

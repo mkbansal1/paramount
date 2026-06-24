@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/licensing",
+  "path": "licensing",
+  "timestamp": "2026-06-23T15:46:29.157Z",
+  "title": "Licensing | Paramount",
+  "template": "content-page",
+  "blocks": [
+    "form-placeholder",
+    "form-placeholder"
+  ]
+}

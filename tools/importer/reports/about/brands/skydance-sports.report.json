@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/brands/skydance-sports",
+  "path": "about/brands/skydance-sports",
+  "timestamp": "2026-06-22T09:24:04.490Z",
+  "title": "Paramount Sports Entertainment | Paramount",
+  "template": "brand-detail",
+  "blocks": [
+    "brand-hero",
+    "columns-info",
+    "columns-info",
+    "cards-show"
+  ]
+}

@@ -1,0 +1,21 @@
+version: 1
+
+indices:
+  press:
+    include:
+      - '/content/press/**'
+      - '/press/**'
+    target: /press-index.json
+    properties:
+      title:
+        select: head > meta[property="og:title"]
+        value: |
+          attribute(el, 'content')
+      date:
+        select: head > meta[name="press-date"]
+        value: |
+          attribute(el, 'content')
+      template:
+        select: head > meta[name="template"]
+        value: |
+          attribute(el, 'content')

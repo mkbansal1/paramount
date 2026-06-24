@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/businesses/advertising/insights",
+  "path": "about/businesses/advertising/insights",
+  "timestamp": "2026-06-23T08:54:05.700Z",
+  "title": "Insights | Paramount",
+  "template": "content-page",
+  "blocks": [
+    "cards-show",
+    "cards-show",
+    "cards",
+    "callout",
+    "callout"
+  ]
+}

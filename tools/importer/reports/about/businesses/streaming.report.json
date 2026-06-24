@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/businesses/streaming",
+  "path": "about/businesses/streaming",
+  "timestamp": "2026-06-23T08:52:34.819Z",
+  "title": "Streaming | Paramount",
+  "template": "content-page",
+  "blocks": [
+    "hero-page",
+    "columns-info",
+    "columns-info",
+    "cards"
+  ]
+}

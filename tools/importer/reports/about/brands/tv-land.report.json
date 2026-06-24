@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/brands/tv-land",
+  "path": "about/brands/tv-land",
+  "timestamp": "2026-06-22T09:22:21.683Z",
+  "title": "TV Land | Paramount",
+  "template": "brand-detail",
+  "blocks": [
+    "brand-hero",
+    "columns-info",
+    "columns-info",
+    "cards-brand"
+  ]
+}

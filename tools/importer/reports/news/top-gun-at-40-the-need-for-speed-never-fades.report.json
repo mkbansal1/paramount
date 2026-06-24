@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/news/top-gun-at-40-the-need-for-speed-never-fades",
+  "path": "news/top-gun-at-40-the-need-for-speed-never-fades",
+  "timestamp": "2026-06-23T09:23:21.219Z",
+  "title": "‘Top Gun’ at 40: The Need for Speed Never Fades | Paramount",
+  "template": "news-article",
+  "blocks": [
+    "news-hero",
+    "news-video"
+  ]
+}

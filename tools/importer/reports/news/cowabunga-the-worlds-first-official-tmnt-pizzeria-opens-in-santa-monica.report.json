@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/news/cowabunga-the-worlds-first-official-tmnt-pizzeria-opens-in-santa-monica",
+  "path": "news/cowabunga-the-worlds-first-official-tmnt-pizzeria-opens-in-santa-monica",
+  "timestamp": "2026-06-23T09:20:04.083Z",
+  "title": "Cowabunga! The World’s First Official 'TMNT' Pizzeria Opens in Santa Monica | Paramount",
+  "template": "news-article",
+  "blocks": [
+    "news-hero"
+  ]
+}

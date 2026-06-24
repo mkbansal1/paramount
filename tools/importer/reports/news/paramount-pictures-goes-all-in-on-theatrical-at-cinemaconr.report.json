@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/news/paramount-pictures-goes-all-in-on-theatrical-at-cinemaconr",
+  "path": "news/paramount-pictures-goes-all-in-on-theatrical-at-cinemaconr",
+  "timestamp": "2026-06-23T09:21:39.064Z",
+  "title": "Paramount Pictures Goes All In on Theatrical at CinemaCon® | Paramount",
+  "template": "news-article",
+  "blocks": [
+    "news-hero",
+    "news-video"
+  ]
+}

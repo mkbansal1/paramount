@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/production-finance",
+  "path": "production-finance",
+  "timestamp": "2026-06-23T15:44:48.437Z",
+  "title": "Production Finance | Paramount",
+  "template": "content-page",
+  "blocks": [
+    "hero-page",
+    "cards"
+  ]
+}

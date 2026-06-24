@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/brands/network-10",
+  "path": "about/brands/network-10",
+  "timestamp": "2026-06-22T09:24:30.395Z",
+  "title": "Network 10 | Paramount",
+  "template": "brand-detail",
+  "blocks": [
+    "brand-hero",
+    "columns-info",
+    "columns-info",
+    "cards-show",
+    "cards-brand"
+  ]
+}

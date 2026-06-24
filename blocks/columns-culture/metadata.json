@@ -1,0 +1,38 @@
+{
+  "variantName": "columns-culture",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-06-22T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.paramount.com/",
+    "originPage": "Paramount home page",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "cta-feature",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "headings + CTA button | image",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "two-column text + image promotional CTAs",
+      "split hero/feature sections on dark backgrounds",
+      "side-by-side headline + supporting image layouts"
+    ],
+    "notSuitableFor": [
+      "repeatable item grids (use cards)",
+      "more than two balanced columns of body copy"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-22T00:00:00.000Z"
+  }
+}

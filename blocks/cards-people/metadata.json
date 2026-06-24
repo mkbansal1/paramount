@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-people",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-06-22T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.paramount.com/about/board-of-directors",
+    "originPage": "Board of Directors (content-page template)",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "wide",
+    "purpose": "people-grid",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "headshot image + name heading + role/title line + tile link",
+    "buttonCount": 0,
+    "imageCount": 10
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "leadership / board of directors / team member grids",
+      "person cards with headshot + name + role linking to a bio page",
+      "single-person tiles (e.g. Chairman) using the same model"
+    ],
+    "notSuitableFor": [
+      "show poster grids (use cards-show)",
+      "brand tiles with hover-reveal logo overlay (use cards-brand)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/about/board-of-directors"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-22T00:00:00.000Z"
+  }
+}

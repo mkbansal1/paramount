@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/",
+  "path": "index",
+  "timestamp": "2026-06-22T06:47:07.451Z",
+  "title": "Home | Paramount",
+  "template": "homepage",
+  "blocks": [
+    "carousel-hero",
+    "cards-brand",
+    "columns-culture"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/support",
+  "path": "support",
+  "timestamp": "2026-06-23T15:45:04.984Z",
+  "title": "Support | Paramount",
+  "template": "content-page",
+  "blocks": [
+    "hero-page",
+    "columns-feature",
+    "columns-feature"
+  ]
+}
