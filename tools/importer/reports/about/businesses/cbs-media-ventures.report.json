@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/businesses/cbs-media-ventures",
+  "path": "about/businesses/cbs-media-ventures",
+  "timestamp": "2026-06-23T08:52:13.349Z",
+  "title": "CBS Media Ventures | Paramount",
+  "template": "content-page",
+  "blocks": [
+    "hero-page",
+    "columns-info",
+    "columns-info",
+    "cards-show",
+    "stats",
+    "cards"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/press/paramount-sends-letter-to-warner-bros-discovery-shareholders",
+  "path": "press/paramount-sends-letter-to-warner-bros-discovery-shareholders",
+  "timestamp": "2026-06-23T13:28:39.373Z",
+  "title": "PARAMOUNT SENDS LETTER TO WARNER BROS. DISCOVERY SHAREHOLDERS | Paramount",
+  "template": "press-release",
+  "blocks": [
+    "press-hero",
+    "offer-table"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/brands/pop-tv",
+  "path": "about/brands/pop-tv",
+  "timestamp": "2026-06-22T09:24:37.729Z",
+  "title": "Pop TV | Paramount",
+  "template": "brand-detail",
+  "blocks": [
+    "brand-hero",
+    "columns-info",
+    "columns-info",
+    "cards-brand"
+  ]
+}

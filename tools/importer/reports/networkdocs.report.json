@@ -1,0 +1,20 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/networkdocs",
+  "path": "networkdocs",
+  "timestamp": "2026-06-23T15:44:59.846Z",
+  "title": "Network Documents | Paramount",
+  "template": "content-page",
+  "blocks": [
+    "hero-page",
+    "columns-info",
+    "columns-info",
+    "columns-info",
+    "columns-info",
+    "columns-info",
+    "columns-info",
+    "cards",
+    "cards",
+    "cards"
+  ]
+}

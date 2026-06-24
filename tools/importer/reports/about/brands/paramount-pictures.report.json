@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/brands/paramount-pictures",
+  "path": "about/brands/paramount-pictures",
+  "timestamp": "2026-06-22T09:21:52.928Z",
+  "title": "Paramount Pictures | Paramount",
+  "template": "brand-detail",
+  "blocks": [
+    "brand-hero",
+    "columns-info",
+    "columns-info",
+    "cards-show",
+    "cards-brand"
+  ]
+}

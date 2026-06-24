@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/careers/life-at-paramount",
+  "path": "careers/life-at-paramount",
+  "timestamp": "2026-06-23T08:54:11.523Z",
+  "title": "Life at Paramount | Paramount",
+  "template": "content-page",
+  "blocks": [
+    "hero-page",
+    "columns-info",
+    "columns-info",
+    "testimonials",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "job-search"
+  ]
+}

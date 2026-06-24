@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/news/paramount-earns-18-news-documentary-emmyr-award-nominations",
+  "path": "news/paramount-earns-18-news-documentary-emmyr-award-nominations",
+  "timestamp": "2026-06-23T09:21:11.188Z",
+  "title": "Paramount Earns 18 News & Documentary Emmy® Award Nominations | Paramount",
+  "template": "news-article",
+  "blocks": [
+    "news-hero"
+  ]
+}

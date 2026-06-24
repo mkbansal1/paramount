@@ -1,0 +1,38 @@
+{
+  "variantName": "breadcrumb",
+  "baseBlock": "breadcrumb",
+  "version": "1.0.0",
+  "created": "2026-06-22T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.paramount.com/about/brands/mtv",
+    "originPage": "MTV brand-detail page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "navigation-breadcrumb",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "ancestor links + current page label",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "breadcrumb trails on interior/detail pages",
+      "navigation context above a page hero",
+      "ancestor-page link trails ending in the current page"
+    ],
+    "notSuitableFor": [
+      "primary site navigation menus",
+      "footer link columns"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/about/brands/mtv", "/about/board-of-directors"],
+    "reuseCount": 2,
+    "lastUsed": "2026-06-22T00:00:00.000Z"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/brands/paramount-network",
+  "path": "about/brands/paramount-network",
+  "timestamp": "2026-06-22T09:25:22.441Z",
+  "title": "Paramount Network | Paramount",
+  "template": "brand-detail",
+  "blocks": [
+    "brand-hero",
+    "columns-info",
+    "columns-info",
+    "cards-show",
+    "cards-brand"
+  ]
+}

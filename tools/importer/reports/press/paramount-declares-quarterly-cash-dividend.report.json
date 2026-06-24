@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/press/paramount-declares-quarterly-cash-dividend",
+  "path": "press/paramount-declares-quarterly-cash-dividend",
+  "timestamp": "2026-06-23T13:27:00.101Z",
+  "title": "Paramount Declares Quarterly Cash Dividend | Paramount",
+  "template": "press-release",
+  "blocks": [
+    "press-hero"
+  ]
+}

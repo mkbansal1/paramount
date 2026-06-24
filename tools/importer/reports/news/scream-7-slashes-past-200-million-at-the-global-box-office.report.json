@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/news/scream-7-slashes-past-200-million-at-the-global-box-office",
+  "path": "news/scream-7-slashes-past-200-million-at-the-global-box-office",
+  "timestamp": "2026-06-23T09:22:15.596Z",
+  "title": "‘Scream 7’ Slashes Past $200 Million at the Global Box Office | Paramount",
+  "template": "news-article",
+  "blocks": [
+    "news-hero",
+    "news-video"
+  ]
+}

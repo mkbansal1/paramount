@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/brands/cbs-sports",
+  "path": "about/brands/cbs-sports",
+  "timestamp": "2026-06-22T09:22:46.291Z",
+  "title": "CBS Sports | Paramount",
+  "template": "brand-detail",
+  "blocks": [
+    "brand-hero",
+    "columns-info",
+    "columns-info",
+    "cards-show",
+    "cards-brand"
+  ]
+}

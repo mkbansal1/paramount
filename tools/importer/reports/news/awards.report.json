@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/news/awards",
+  "path": "news/awards",
+  "timestamp": "2026-06-23T09:44:00.248Z",
+  "title": "Awards | Paramount",
+  "template": "content-page",
+  "blocks": [
+    "hero-page",
+    "columns-info",
+    "columns-info",
+    "cards",
+    "cards",
+    "cards",
+    "cards"
+  ]
+}

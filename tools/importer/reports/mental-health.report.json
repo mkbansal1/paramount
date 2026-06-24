@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/mental-health",
+  "path": "mental-health",
+  "timestamp": "2026-06-23T15:44:42.606Z",
+  "title": "Mental health | Paramount",
+  "template": "content-page",
+  "blocks": [
+    "hero-page",
+    "stats",
+    "cards",
+    "columns-feature",
+    "callout"
+  ]
+}

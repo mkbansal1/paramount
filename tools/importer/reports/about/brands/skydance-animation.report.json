@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/brands/skydance-animation",
+  "path": "about/brands/skydance-animation",
+  "timestamp": "2026-06-22T09:24:16.882Z",
+  "title": "Skydance Animation | Paramount",
+  "template": "brand-detail",
+  "blocks": [
+    "brand-hero",
+    "columns-info",
+    "columns-info",
+    "cards-show"
+  ]
+}

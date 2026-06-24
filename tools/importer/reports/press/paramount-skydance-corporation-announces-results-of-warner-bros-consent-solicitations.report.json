@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/press/paramount-skydance-corporation-announces-results-of-warner-bros-consent-solicitations",
+  "path": "press/paramount-skydance-corporation-announces-results-of-warner-bros-consent-solicitations",
+  "timestamp": "2026-06-23T13:29:05.350Z",
+  "title": "Paramount Skydance Corporation Announces Results of Warner Bros.' Consent Solicitations | Paramount",
+  "template": "press-release",
+  "blocks": [
+    "press-hero",
+    "offer-table",
+    "offer-table"
+  ]
+}

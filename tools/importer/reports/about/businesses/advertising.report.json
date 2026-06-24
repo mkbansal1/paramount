@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/businesses/advertising",
+  "path": "about/businesses/advertising",
+  "timestamp": "2026-06-23T08:53:58.850Z",
+  "title": "Advertising | Paramount",
+  "template": "content-page",
+  "blocks": [
+    "hero-page",
+    "cards",
+    "cards-news",
+    "form-placeholder"
+  ]
+}

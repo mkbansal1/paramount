@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/brands/comedy-central",
+  "path": "about/brands/comedy-central",
+  "timestamp": "2026-06-22T09:22:10.358Z",
+  "title": "Comedy Central | Paramount",
+  "template": "brand-detail",
+  "blocks": [
+    "brand-hero",
+    "columns-info",
+    "columns-info",
+    "cards-show",
+    "cards-brand"
+  ]
+}

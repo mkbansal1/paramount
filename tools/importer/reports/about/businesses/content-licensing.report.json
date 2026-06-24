@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/businesses/content-licensing",
+  "path": "about/businesses/content-licensing",
+  "timestamp": "2026-06-23T08:52:46.432Z",
+  "title": "Content Licensing | Paramount",
+  "template": "content-page",
+  "blocks": [
+    "hero-page",
+    "columns-info",
+    "columns-info",
+    "cards"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/brands/showtime",
+  "path": "about/brands/showtime",
+  "timestamp": "2026-06-22T09:22:04.194Z",
+  "title": "Showtime | Paramount",
+  "template": "brand-detail",
+  "blocks": [
+    "brand-hero",
+    "columns-info",
+    "columns-info",
+    "cards-show"
+  ]
+}

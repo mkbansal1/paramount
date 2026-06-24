@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/brands/skydance-games",
+  "path": "about/brands/skydance-games",
+  "timestamp": "2026-06-22T09:24:24.013Z",
+  "title": "Skydance Games | Paramount",
+  "template": "brand-detail",
+  "blocks": [
+    "brand-hero",
+    "columns-info",
+    "columns-info",
+    "cards-show"
+  ]
+}

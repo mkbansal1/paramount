@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about",
+  "path": "about",
+  "timestamp": "2026-06-23T08:51:34.489Z",
+  "title": "About | Paramount",
+  "template": "content-page",
+  "blocks": [
+    "hero-page",
+    "cards",
+    "columns-feature",
+    "callout"
+  ]
+}

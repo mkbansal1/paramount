@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/businesses/consumer-products",
+  "path": "about/businesses/consumer-products",
+  "timestamp": "2026-06-23T08:52:52.756Z",
+  "title": "Consumer Products | Paramount",
+  "template": "content-page",
+  "blocks": [
+    "hero-page",
+    "columns-info",
+    "columns-info",
+    "cards-show",
+    "cards"
+  ]
+}

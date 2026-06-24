@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/brands/cbs-entertainment",
+  "path": "about/brands/cbs-entertainment",
+  "timestamp": "2026-06-22T09:23:58.258Z",
+  "title": "CBS Entertainment | Paramount",
+  "template": "brand-detail",
+  "blocks": [
+    "brand-hero",
+    "columns-info",
+    "columns-info",
+    "cards-show",
+    "cards-brand"
+  ]
+}

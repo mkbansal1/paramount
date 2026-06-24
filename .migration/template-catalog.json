@@ -1,0 +1,74 @@
+{
+  "templates": [
+    {
+      "name": "homepage",
+      "representativePages": [
+        "https://cms.paramount.com/",
+        "https://cms.paramount.com/home"
+      ],
+      "urls": [
+        "https://cms.paramount.com/",
+        "https://cms.paramount.com/home"
+      ],
+      "description": "Full-bleed landing page: hero slider, featured grid section, and a two-column culture/CTA banner. Maps to the already-migrated homepage."
+    },
+    {
+      "name": "content-page",
+      "representativePages": [
+        "https://cms.paramount.com/about/board-of-directors",
+        "https://cms.paramount.com/careers/international-careers",
+        "https://cms.paramount.com/about/brands/cmt",
+        "https://cms.paramount.com/about/compliance-resources"
+      ],
+      "urls": [
+        "https://cms.paramount.com/about/board-of-directors",
+        "https://cms.paramount.com/about/brands/cmt",
+        "https://cms.paramount.com/about/brands/paramount-pictures",
+        "https://cms.paramount.com/about/businesses/cbs-media-ventures",
+        "https://cms.paramount.com/about/businesses/see-it-now-studios",
+        "https://cms.paramount.com/about/compliance-resources",
+        "https://cms.paramount.com/about/leadership",
+        "https://cms.paramount.com/calm-act-certifications",
+        "https://cms.paramount.com/careers/international-careers",
+        "https://cms.paramount.com/careers/life-at-paramount",
+        "https://cms.paramount.com/digital-ads",
+        "https://cms.paramount.com/emerging-talent-virtual-events",
+        "https://cms.paramount.com/inclusion-impact/sustainability",
+        "https://cms.paramount.com/taxonomy/term/1",
+        "https://cms.paramount.com/taxonomy/term/11"
+      ],
+      "description": "Standard corporate content page: page header/banner followed by stacked rich-text sections, image+text rows, and link lists. Covers about, brand detail, business detail, and career sub-pages."
+    },
+    {
+      "name": "careers-landing",
+      "representativePages": [
+        "https://cms.paramount.com/careers"
+      ],
+      "urls": [
+        "https://cms.paramount.com/careers"
+      ],
+      "description": "Careers landing page: hero banner, multi-column feature/promo blocks, and CTA sections linking to career sub-pages."
+    },
+    {
+      "name": "legal-terms",
+      "representativePages": [
+        "https://cms.paramount.com/cbs-research-survey-terms-of-use"
+      ],
+      "urls": [
+        "https://cms.paramount.com/cbs-research-survey-terms-of-use"
+      ],
+      "description": "Long-form legal/policy document: single-column heading plus dense rich-text body with no media blocks."
+    },
+    {
+      "name": "news-article",
+      "representativePages": [
+        "https://cms.paramount.com/news/john-halley-on-finding-opportunity-in-change"
+      ],
+      "urls": [
+        "https://cms.paramount.com/news/john-halley-on-finding-opportunity-in-change",
+        "https://cms.paramount.com/news/olivier-jollet-on-entertaining-the-planet-with-pluto-tv"
+      ],
+      "description": "Editorial article page: title/byline header, hero image, and single-column rich-text body with inline images and pull quotes."
+    }
+  ]
+}

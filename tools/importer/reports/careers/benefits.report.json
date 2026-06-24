@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/careers/benefits",
+  "path": "careers/benefits",
+  "timestamp": "2026-06-23T08:54:22.903Z",
+  "title": "Benefits | Paramount",
+  "template": "content-page",
+  "blocks": [
+    "hero-page",
+    "columns-info",
+    "columns-info",
+    "cards",
+    "testimonials",
+    "columns-feature",
+    "definition-list",
+    "callout",
+    "job-search"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/eeo-info-webpage",
+  "path": "eeo-info-webpage",
+  "timestamp": "2026-06-23T15:28:10.640Z",
+  "title": "eeo info webpage | Paramount",
+  "template": "legal-terms",
+  "blocks": [
+    "legal-hero"
+  ]
+}

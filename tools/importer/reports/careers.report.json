@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/careers",
+  "path": "careers",
+  "timestamp": "2026-06-23T15:45:11.132Z",
+  "title": "Careers | Paramount",
+  "template": "content-page",
+  "blocks": [
+    "columns-info",
+    "columns-info",
+    "cards",
+    "testimonials",
+    "testimonials",
+    "columns-feature",
+    "callout",
+    "job-search"
+  ]
+}

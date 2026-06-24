@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/brands/cbs-news",
+  "path": "about/brands/cbs-news",
+  "timestamp": "2026-06-22T09:23:04.102Z",
+  "title": "CBS News | Paramount",
+  "template": "brand-detail",
+  "blocks": [
+    "brand-hero",
+    "columns-info",
+    "columns-info",
+    "cards-show",
+    "cards-brand"
+  ]
+}

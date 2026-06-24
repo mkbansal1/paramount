@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/careers/internships",
+  "path": "careers/internships",
+  "timestamp": "2026-06-23T08:54:33.416Z",
+  "title": "Internships | Paramount",
+  "template": "content-page",
+  "blocks": [
+    "hero-page",
+    "columns-info",
+    "columns-info",
+    "cards",
+    "cards",
+    "cards",
+    "cards",
+    "cards",
+    "cards",
+    "testimonials",
+    "columns-feature",
+    "columns-feature",
+    "accordion"
+  ]
+}

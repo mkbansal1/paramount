@@ -1,0 +1,37 @@
+{
+  "variantName": "stats",
+  "baseBlock": "stats",
+  "version": "1.0.0",
+  "created": "2026-06-22T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.paramount.com/about/businesses/cbs-media-ventures",
+    "originPage": "CBS Media Ventures (content-page template)",
+    "blockPosition": "mid"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "stat-strip",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "horizontal strip of big-number + caption pairs",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "content-breaker stat strips (big number/value + short caption)",
+      "business and impact pages highlighting headline metrics"
+    ],
+    "notSuitableFor": [
+      "card grids with images (use cards-* variants)",
+      "two-column text + links layouts (use columns-info)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/about/businesses/cbs-media-ventures"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-22T00:00:00.000Z"
+  }
+}

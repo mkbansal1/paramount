@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/brands/nickelodeon",
+  "path": "about/brands/nickelodeon",
+  "timestamp": "2026-06-22T09:21:59.120Z",
+  "title": "Nickelodeon | Paramount",
+  "template": "brand-detail",
+  "blocks": [
+    "brand-hero",
+    "columns-info",
+    "columns-info",
+    "cards-show",
+    "cards-brand"
+  ]
+}

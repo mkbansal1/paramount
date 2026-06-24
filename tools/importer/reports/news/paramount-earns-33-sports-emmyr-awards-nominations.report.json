@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/news/paramount-earns-33-sports-emmyr-awards-nominations",
+  "path": "news/paramount-earns-33-sports-emmyr-awards-nominations",
+  "timestamp": "2026-06-23T09:21:17.433Z",
+  "title": "Paramount Earns 33 Sports Emmy® Awards Nominations | Paramount",
+  "template": "news-article",
+  "blocks": [
+    "news-hero"
+  ]
+}

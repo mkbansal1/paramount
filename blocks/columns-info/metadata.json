@@ -1,0 +1,38 @@
+{
+  "variantName": "columns-info",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-06-22T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.paramount.com/about/brands/mtv",
+    "originPage": "MTV brand-detail page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "info-text",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "heading + paragraph | label + external links list",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "descriptive text alongside a related links list",
+      "two-column informational layouts on light backgrounds",
+      "brand/section description + supporting link panel"
+    ],
+    "notSuitableFor": [
+      "image + text promotional CTAs (use columns-culture)",
+      "repeatable item grids (use cards)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/about/brands/mtv"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-22T00:00:00.000Z"
+  }
+}

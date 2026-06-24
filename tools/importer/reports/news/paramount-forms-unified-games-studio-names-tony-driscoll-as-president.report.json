@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/news/paramount-forms-unified-games-studio-names-tony-driscoll-as-president",
+  "path": "news/paramount-forms-unified-games-studio-names-tony-driscoll-as-president",
+  "timestamp": "2026-06-23T09:21:27.878Z",
+  "title": "Paramount Forms Unified Games Studio, Names Tony Driscoll as President | Paramount",
+  "template": "news-article",
+  "blocks": [
+    "news-hero",
+    "quote",
+    "quote",
+    "quote"
+  ]
+}

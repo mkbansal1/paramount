@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/brands/paramount-plus",
+  "path": "about/brands/paramount-plus",
+  "timestamp": "2026-06-22T09:23:51.229Z",
+  "title": "Paramount + | Paramount",
+  "template": "brand-detail",
+  "blocks": [
+    "brand-hero",
+    "columns-info",
+    "columns-info",
+    "cards-show",
+    "cards-brand"
+  ]
+}

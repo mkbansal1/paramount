@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/leadership",
+  "path": "about/leadership",
+  "timestamp": "2026-06-23T08:51:43.532Z",
+  "title": "Leadership | Paramount",
+  "template": "content-page",
+  "blocks": [
+    "hero-page",
+    "cards-people",
+    "cards-people"
+  ]
+}

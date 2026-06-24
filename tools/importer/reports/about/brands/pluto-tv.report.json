@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.paramount.com/about/brands/pluto-tv",
+  "path": "about/brands/pluto-tv",
+  "timestamp": "2026-06-22T09:22:34.345Z",
+  "title": "Pluto TV | Paramount",
+  "template": "brand-detail",
+  "blocks": [
+    "brand-hero",
+    "columns-info",
+    "columns-info",
+    "cards-show",
+    "cards-brand"
+  ]
+}
